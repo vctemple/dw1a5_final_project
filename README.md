@@ -1,3 +1,7 @@
-# Landing page exercise
+# Projeto final DW1A4
 
- - Landing page using html and css only for language exercise.
+ - Disciplina de desenvolvimento Web - IFSP-CJO
+ - Integrantes: Victor Temple - CJ3011771
+		Gabrielli Migotto - CJ3011399
+
+ - https://dw1a5-proj-vct-gmb.netlify.app/
