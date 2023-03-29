@@ -1,7 +1,7 @@
 :root{
     --blue-pt: #070061;
     --purple-pt: #460B6A;
-    --white-pt: #F6F3FF;
+    --white-pt: #FFF;
     --gray-pt: #eee;
     --black-pt: #000;
     --gap: 3rem;
@@ -57,6 +57,11 @@ h5{
 h6{
     font-size: 3rem;
 }
+
+.logo{
+    width: 10rem;
+}
+
 
 .close-menu{
     display: none;
@@ -122,17 +127,20 @@ h6{
     list-style: none;
     display: flex;
 }
+
 .menu li:hover{
     background-color: var(--gray-pt);
 }
 
 .menu ul li a{
-    display: block;
+    display: flex;
     padding: 2rem;
     font-size: 1.8rem;
     color: var(--blue-pt);
     position: relative;
     text-decoration: none;
+    height: 10rem;
+    align-items: center;
 }
 
 .menu ul li a::after{
@@ -152,7 +160,7 @@ h6{
 }
 
 .menu-space{
-    height: 6.4rem;
+    height: 10rem;
 }
 
 .intro{
