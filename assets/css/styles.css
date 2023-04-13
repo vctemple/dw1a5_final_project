@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/lovelo');
+@import url('https://fonts.cdnfonts.com/css/roboto-flex');
+
 :root{
     --red-pt: #BE3525;
     --purple-pt: #460B6A;
@@ -11,6 +14,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lovelo', sans-serif;
+    font-weight: 900;
 }
 
 html{
@@ -20,16 +25,16 @@ html{
 
 /*
 font-family: 'Lovelo'; - Menu e Hs
-font-family: 'Bungee', cursive; - Demais textos
+font-family: 'Roboto Flex', sans-serif - Demais textos
 */
 
 body{
-    font-family: 'Nanum Myeongjo', serif;
-    font-size: 1.6rem;
+    font-size: 1.6rem; 
 }
 
-h1, h2, h3, h4, h5, h6{
-    font-family: 'Lovelo';
+p{
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 400;
 }
 
 h1{
@@ -87,7 +92,7 @@ h6{
 .content{
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
+    padding: 1rem;
 }
 
 .section{
@@ -96,7 +101,6 @@ h6{
 
 .menu{
     background-color: var(--white-pt);
-
     position: fixed;
     top: 0;
     left: 0;
@@ -132,9 +136,8 @@ h6{
     text-decoration: none;
     height: 11rem;
     align-items: center;
-    font-family: Lovelo;
-    font-size: 1.7rem;
-
+    
+    font-size: 1.5rem;
 }
 
 .menu ul li a::after{
@@ -154,7 +157,7 @@ h6{
 }
 
 .menu-space{
-    height: 10rem;
+    height: 11rem;
 }
 
 .intro{
