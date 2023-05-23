@@ -217,13 +217,13 @@ h6{
 
 .top3 li::before{
     content: counter(contador) ". ";
-    color: var(--purple-pt);
+    color: var(--red-pt);
     font-weight: 700;
     font-size: 2.3rem;
 }
 
 .top3 h3{
-    color: var(--purple-pt);
+    color: var(--red-pt);
     margin-bottom: 2rem;
 }
 
@@ -291,7 +291,7 @@ table td, table th{
 }
 
 tfoot td, table th{
-    background-color: var(--blue-pt);
+    background-color: var(--black-pt);
     color: #eee;
 }
 
@@ -343,7 +343,7 @@ fieldset{
 
 .form-group button:hover{
     background: var(--white-pt);
-    color: var(--blue-pt);
+    color: var(--black-pt);
 }
 
 .footer{
@@ -355,14 +355,14 @@ fieldset{
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    background: var(--gray-pt);
+    background: var(--white-pt);
     width: 5rem;
     height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: var(--purple-pt);
+    color: var(--black-pt);
     transform: rotate(-90deg);
     text-decoration: none;
     font-size: 2.5rem;
@@ -371,7 +371,8 @@ fieldset{
 
 .goto-top:hover{
     background-color: var(--blue-pt);
-    color: var(--white-pt);
+    color: blue;
+    font-size: 3rem;
 }
 
 @media (max-width: 1090px){
