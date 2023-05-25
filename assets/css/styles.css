@@ -456,6 +456,11 @@ fieldset{
 }
 
 .carrossel{
-    width:60%;
+    padding: 100px;
+    width:100%;
     margin: 0 auto;
+}
+
+.carrossel img{
+    width: 100%;
 }
