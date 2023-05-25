@@ -454,3 +454,8 @@ fieldset{
         margin-top: 3rem;
     }
 }
+
+.carrossel{
+    width:60%;
+    margin: 0 auto;
+}

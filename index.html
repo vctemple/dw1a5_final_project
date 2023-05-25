@@ -16,14 +16,33 @@
     <label for="close-menu" class="close-menu-label"
      title="close menu">
     </label>
+
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <div class="carrossel">
+        <img src alt="">
+         <img src alt="">
+        <img src alt="">
+        <img src alt="">
+
+    </div>
+    <script>
+        $('.carrossel').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            });
+    </script>
    
     <aside class="menu">
     <div class="menu-content content">
         <img src="/assets/img/logo.png" alt="" class="logo">
         <nav>
             <ul onclick="getElementById('close-menu').checked = false;">
-                <li><a href="#">Perfil</a></li>
-                <li><a href="#esp">Especialidades</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#esp">Perfil</a></li>
                 <li><a href="#gallery">Galeria</a></li>
                 <li><a href="#pricing">Tabela de preços</a></li>
                 <li><a href="#contact">Contato</a></li>
@@ -183,6 +202,12 @@
             </div>
         </div>
     </div>
+<!-- Adicionando marcara ao formulário -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script> $(document).ready(function(){
+    $('#phone').mask('(00) 00000-0000')})
+    </script>
 
     <div class="bgblack section">
         <div class="content intro" id="contact">
@@ -193,7 +218,7 @@
                 <img src="assets/img/img-contact.svg" alt="background with blue and purple squares">
             </div>
             <div class="forms">
-                <fieldset>
+                <form>
                     <div class="form-group">
                         <label for="first-name"></label>
                         <input type="text" name="first-name"
@@ -211,7 +236,7 @@
                     </div>
                     <div class="form-group">
                         <label for="phone"></label>
-                        <input type="text" name="phone"
+                        <input type="tel" name="phone"
                          id="phone" placeholder="Telefone">
                     </div>
                     <div class="form-group text-area">
@@ -222,7 +247,7 @@
                     <div class="form-group">
                         <button type="submit">Enviar</button>
                     </div>
-                </fieldset>
+                </form>
             </div>
         </div>
         
