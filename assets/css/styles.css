@@ -157,15 +157,15 @@ h6{
 }
 
 .carrossel{
-    padding-left: 5em;
     margin-top: 10rem;
-    max-width: 120rem;
+    width: 100%;
 }
 
 .carrossel img{
-    height: 100%;
-    margin: 0 auto;
+    max-width: 80rem;
+    max-height: 40rem;
     padding: 3rem;
+    object-fit: cover;
 }
 
 .intro{
