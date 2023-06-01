@@ -116,6 +116,7 @@ h6{
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
+    flex-wrap:wrap-reverse;
 }
 
 .menu ul{
@@ -136,7 +137,7 @@ h6{
     text-decoration: none;
     height: 11rem;
     align-items: center;
-    
+    justify-content: center;
     font-size: 1.5rem;
 }
 
@@ -295,12 +296,12 @@ table td, table th{
     white-space: nowrap;
     padding: 0.5rem;
     text-align: center;
-    border: 0.1rem solid lightgrey
+    border: 0.1rem solid var(--gray-pt)
 }
 
 tfoot td, table th{
     background-color: var(--black-pt);
-    color: #eee;
+    color: var(--gray-pt);
 }
 
 .contact-img img, .contact-img svg{
@@ -363,7 +364,7 @@ fieldset{
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    background: var(--white-pt);
+    background: var(--gray-pt);
     width: 5rem;
     height: 5rem;
     display: flex;
@@ -389,6 +390,18 @@ fieldset{
     }
 }
 
+@media (max-width: 920px){
+    .carrossel{
+        margin-top: 12rem;
+        width: 100%;
+    }
+    .carrossel img{
+        max-width: 40rem;
+        max-height: 20rem;
+        padding: 1rem;
+    }
+}
+
 @media (max-width: 860px){
     .gallery{
         grid-template-columns: 1fr;
@@ -405,9 +418,14 @@ fieldset{
     .grid{
         grid-template-columns: 1fr;
     }
+    .carrossel img{
+        max-width: 5rem;
+        max-height: 2rem;
+        padding: 1rem;
+    }
 }
 
-@media (max-width: 640px){
+@media (max-width: 790px){
     .menu-space{
         display: none;
     }
@@ -429,7 +447,7 @@ fieldset{
 
     .menu-content ul li a{
         font-size: 20px;
-        padding-top: 5rem;
+        padding-top: 1rem;
     }
 
     .close-menu-label::after{
@@ -458,8 +476,22 @@ fieldset{
         content: '×';
     }
 
-    .intro-text{
-        margin-top: 3rem;
+    .carrossel{
+        margin-top: 0rem;
+    }
+    
+    .carrossel img{
+        max-width: 40rem;
+        max-height: 20rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 450px){
+    .carrossel img{
+        max-width: 20rem;
+        max-height: 12rem;
+        padding: 1rem;
     }
 }
 
