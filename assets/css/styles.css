@@ -305,7 +305,7 @@ tfoot td, table th{
 }
 
 .contact-img img, .contact-img svg{
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
 }
 
