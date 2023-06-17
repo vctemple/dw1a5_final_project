@@ -1,6 +1,12 @@
+/*Repositórios das fontes utilizadas na página*/
 @import url('https://fonts.cdnfonts.com/css/lovelo');
 @import url('https://fonts.cdnfonts.com/css/roboto-flex');
+/*
+font-family: 'Lovelo'; - Menu e Hs
+font-family: 'Roboto Flex', sans-serif - Demais textos
+*/
 
+/*Variáveis de cor e espaçamento utilizadas na página*/
 :root{
     --red-pt: #BE3525;
     --purple-pt: #460B6A;
@@ -10,6 +16,7 @@
     --gap: 3rem;
 }
 
+/*Setup das configurações de estilização raiz da página, unidade de medida em "rem"*/
 *{
     margin: 0;
     padding: 0;
@@ -17,88 +24,71 @@
     font-family: 'Lovelo', sans-serif;
     font-weight: 900;
 }
-
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
-
-/*
-font-family: 'Lovelo'; - Menu e Hs
-font-family: 'Roboto Flex', sans-serif - Demais textos
-*/
-
 body{
     font-size: 1.6rem; 
 }
-
 p, li, td{
     font-family: 'Roboto Flex', sans-serif;
     font-weight: 400;
 }
-
 h1{
     font-size: 6rem;
     text-transform: uppercase;
 }
-
 h2{
     font-size: 5.5rem;
 }
-
 h3{
     font-size: 5rem;
 }
-
 h4{
     font-size: 4.5rem;
 }
-
 h5{
     font-size: 4rem;
 }
-
 h6{
     font-size: 3rem;
 }
 
+/*Estilização da classe do logo*/
 .logo{
     width: 11rem;
     height: auto;
 }
 
-
+/*Estilização para o ícone do menu minimizado*/
 .close-menu{
     display: none;
 }
 
-.bg1{
-    background-image: url('../img/pattern-bg.svg');
-    background-size: cover;
-    background-position: center center;
-    color: var(--white-pt);
-}
-
+/*Estilização do background com fundo branco*/
 .bgwhite{
     background-color: var(--white-pt);
     color: var(--black-pt);
 }
 
+/*Estilização do background com fundo preto*/
 .bgblack{
     background-color: var(--black-pt);
     color: var(--gray-pt);
 }
 
+/*Estilização das seções para auxilo de responsividade e espaçamento*/
 .content{
     max-width: 120rem;
     margin: 0 auto;
     padding: 1rem;
 }
-
 .section{
     min-height: 100vh;
 }
 
+/*Estilização dos elementos do menu, toolbar, ícones, hover e clicks*/
 .menu{
     background-color: var(--white-pt);
     position: fixed;
@@ -109,7 +99,6 @@ h6{
     border-bottom: 0.2rem solid var(--gray-pt);
     z-index: 1;
 }
-
 .menu-content{
     display: flex;
     justify-content: space-between;
@@ -118,16 +107,13 @@ h6{
     padding-bottom: 0;
     flex-wrap:wrap-reverse;
 }
-
 .menu ul{
     list-style: none;
     display: flex;
 }
-
 .menu li:hover{
     background-color: var(--gray-pt);
 }
-
 .menu ul li a{
     display: flex;
     padding: 2rem;
@@ -140,7 +126,6 @@ h6{
     justify-content: center;
     font-size: 1.5rem;
 }
-
 .menu ul li a::after{
     content: '';
     position: absolute;
@@ -151,17 +136,16 @@ h6{
     background: var(--black-pt);
     transition: all 300ms ease-in-out;
 }
-
 .menu ul li a:hover::after{
     width: 50%;
     left: 25%;
 }
 
+/*Estilização da seção do carrossel e imagens inseridas*/
 .carrossel{
     margin-top: 10rem;
     width: 100%;
 }
-
 .carrossel img{
     max-width: 80rem;
     max-height: 40rem;
@@ -169,6 +153,7 @@ h6{
     object-fit: cover;
 }
 
+/*Estilização da seção de introdução do perfil dos fotógrafos, textos e imagens*/
 .intro{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -177,24 +162,22 @@ h6{
     gap: var(--gap);
     align-items: center;
 }
-
 .intro-text, .intro-img{
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
 }
-
 .intro p{
     margin-top: 3rem;
     text-align: justify;
 }
-
 .intro-img img, .intro-img svg{
     max-width: 100%;
     height: auto;
     border-radius: 1rem;
 }
 
+/*Estilização da seção das especializações de serviçoes*/
 .top3{
     display: flex;
     flex-flow: nowrap column;
@@ -202,7 +185,6 @@ h6{
     min-height: 100vh;
     text-align: center;
 }
-
 .top3 p{
     margin-top: 3rem;
     text-align: justify;
@@ -210,7 +192,6 @@ h6{
     margin-left: auto;
     margin-right: auto;
 }
-
 .top3 ol{
     text-align: justify;
     max-width: 26rem;
@@ -218,24 +199,22 @@ h6{
     list-style: none;
     counter-reset: contador;
 }
-
 .top3 ol li{
     margin-top: 2rem;
     counter-increment: contador;
 }
-
 .top3 li::before{
     content: counter(contador) ". ";
     color: var(--red-pt);
     font-weight: 700;
     font-size: 2.3rem;
 }
-
 .top3 h3{
     color: var(--red-pt);
     margin-bottom: 2rem;
 }
 
+/*Estilização da estrutura de grid para suportar a galeria de fotos*/
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -246,6 +225,7 @@ h6{
     margin-right: auto;
 }
 
+/*Estilização da galeria de fotos*/
 .gallery{
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -254,77 +234,69 @@ h6{
     gap: var(--gap);
     align-items: center;
 }
-
 .gallery h5{
     margin-bottom: 5rem;
 }
-
 .gallery p{
     text-align: justify;
 }
-
 .gallery-img{
     width: 100%;
     overflow: hidden;
     max-width: 24rem;
     max-height: 24rem;
 }
-
 .gallery-img img{
     transition: all 300ms ease-in-out;
     width: 25rem;
     cursor: pointer;
 }
-
 .gallery-img img:hover{
     transform: scale(1.12) rotate(7deg);
 }
 
+/*Estilização da tabela de orçamentos*/
 .table{
     margin-top: 10rem;
     overflow: hidden;
     overflow-x: auto;
 }
-
 table{
     min-width: 50rem;
     width: 100%;
     border-collapse: collapse;
 }
-
 table td, table th{
     white-space: nowrap;
     padding: 0.5rem;
     text-align: center;
     border: 0.1rem solid var(--gray-pt)
 }
-
 tfoot td, table th{
     background-color: var(--black-pt);
     color: var(--gray-pt);
 }
 
+/*Estilização do ícone da seção do formulário*/
 .contact-img img, .contact-img svg{
     max-width: 60%;
     height: auto;
 }
 
+/*Estilização da seção de formulário, campos e botão de envio*/
 .forms{
     border: none;
     gap: var(--gap);
     padding: 0;
     grid-column: span 2;
 }
-
 fieldset{
     border: none;
 }
-
 .form-group label{
     display: block;
     margin-bottom: 0.2rem;
 }
-
 .form-group input,
 .form-group textarea{
     border: none;
@@ -338,8 +310,6 @@ fieldset{
     margin-right: auto;
     border-radius: 0.3rem;
 }
-
-
 .form-group button{
     border: 0.3rem solid var(--white-pt);
     background: none;
@@ -349,17 +319,18 @@ fieldset{
     transition: all 200ms ease-in-out;
     border-radius: 0.3rem;
 }
-
 .form-group button:hover{
     background: var(--white-pt);
     color: var(--black-pt);
 }
 
+/*Estilização do footer*/
 .footer{
     padding: 1rem;
     text-align: center;
 }
 
+/*Estilização do botão de voltar ao início da página*/
 .goto-top{
     position: fixed;
     bottom: 2rem;
@@ -377,13 +348,13 @@ fieldset{
     font-size: 2.5rem;
     transition: all 200ms ease-in-out;
 }
-
 .goto-top:hover{
     background-color: var(--blue-pt);
     color: blue;
     font-size: 3rem;
 }
 
+/*Responsividade dos elementos de página para adaptação em diferentes displays*/
 @media (max-width: 1090px){
     .grid{
         grid-template-columns: 1fr 1fr;

@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-
     <title>Melanie & Herrera</title>
 </head>
+
 <body>
+    <!--input para abrir e fechar o menu quando a responsividade necessitar-->
     <input type="checkbox" id="close-menu"
     class="close-menu" aria-label="Close menu"
      role="button" aria-pressed="true">
 
+     <!--Label para representar o ícone do menu simplificado-->
     <label for="close-menu" class="close-menu-label"
      title="close menu">
     </label>
 
+    <!--Seção para header, onde será representado o menu de navegação-->
     <aside class="menu">
     <div class="menu-content content">
         <img src="assets/img/logo.png" alt="" class="logo">
@@ -35,9 +37,8 @@
     </div>
    </aside>
    
+   <!--Seção para o carrossel-->
    <div class="carrossel">
-      
-
         <img src="assets/img/casamento.png" alt="">
         <img src="assets/img/modelo.png" alt="">
         <img src="assets/img/ensaio ex.png" alt="">
@@ -45,11 +46,8 @@
         <img src="assets/img/newborn.png" alt="">
     </div>
 
-
-    
-    
-   
-   <div class="bgblack section" id="perfil">
+   <!--Seção de descrição de perfil dos fotógrafos-->
+    <div class="bgblack section" id="perfil">
         <div class="content intro">
             <div class="intro-img">
                 <img src="assets/img/perfil1.png" alt="background with blue and purple squares">
@@ -72,7 +70,7 @@
         </div>
     </div>
     
-
+    <!--Seção de descrição das especialiades estruturadas em listas-->
     <div class="bgwhite section" id="esp">
         <div class="content top3">
             <h3>Especialidades</h3>          
@@ -111,6 +109,7 @@
         </div>
     </div>
 
+    <!--Seção de galeria de fotos com animação de hover usando css e click expansivo com javascript-->
     <div class="bgblack section">
         <div class="content gallery" id="gallery">
             <div>
@@ -150,6 +149,7 @@
         </div>
     </div>
 
+    <!--Seção de descrição dos orçamentos estruturada em tabela-->
     <div class="bgwhite section">
         <div class="content top3" id="pricing">
             <div>
@@ -198,6 +198,7 @@
         </div>
     </div>
 
+    <!--Seção de formulário com as devidas validações de preenchimento e máscara-->
     <div class="bgblack section">
         <div class="content intro" id="contact">
             <div class="intro-text">
@@ -239,19 +240,22 @@
                 </form>
             </div>
         </div>
-        
     </div>
+    
+    <!--Seção de footer para descrições dos autores da página-->
     <div id="footer" class="bgwhite footer">
-        <small>Victor Temple - Gabrielli Migotto - 2023 &copy; Todos os direitos reservados</small>
-        
+        <small>Victor Temple - Gabrielli Migotto - 2023 &copy; Todos os direitos reservados</small>    
     </div>
 
+    <!--Ícone de click para voltar ao topo da página usando apenas css-->
     <a class="goto-top" href="#">➤</a>
 
+    <!--Repositórios para funcionamento da máscara do formulário e funcionamento do carrossel-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!--Rotina de funcionamento da máscara e propriedades do carrossel-->
     <script> 
         $(document).ready(function(){
             $('#phone').mask('(00) 00000-0000')
@@ -263,8 +267,9 @@
            autoplaySpeed: 2000,
            arrows: false,
         });
-
     </script>
+    
+    <!--Função para expandir imagens na galeria-->
     <script>
         function abrirImagem(imagem) { 
             var esquerda = (screen.width - imagem.width); 
@@ -273,6 +278,8 @@
             topo + ', left=' + esquerda); 
         }       
     </script>
+    
+    <!--Função de validações do formulário-->
     <script>
         function validar() {
             email = document.querySelector("#email").value;
