@@ -9,7 +9,7 @@ font-family: 'Roboto Flex', sans-serif - Demais textos
 /*Variáveis de cor e espaçamento utilizadas na página*/
 :root{
     --red-pt: #BE3525;
-    --purple-pt: #460B6A;
+    --blue-pt: rgb(0, 0, 255);
     --white-pt: #FFF;
     --gray-pt: #eee;
     --black-pt: #000;
@@ -105,7 +105,7 @@ h6{
     align-items: center;
     padding-top: 0;
     padding-bottom: 0;
-    flex-wrap:wrap-reverse;
+    flex-wrap: wrap-reverse;
 }
 .menu ul{
     list-style: none;
@@ -349,8 +349,8 @@ fieldset{
     transition: all 200ms ease-in-out;
 }
 .goto-top:hover{
-    background-color: var(--blue-pt);
-    color: blue;
+    background-color: transparent;
+    color: var(--blue-pt);
     font-size: 3rem;
 }
 
@@ -396,7 +396,7 @@ fieldset{
     }
 }
 
-@media (max-width: 790px){
+@media (max-width: 870px){
     .menu-space{
         display: none;
     }
@@ -428,7 +428,7 @@ fieldset{
         top: 2rem;
         right: 2rem;
         background: var(--gray-pt);
-        color: var(--blue-pt);
+        color: var(--black-pt);
         font-size: 3rem;
         line-height: 3rem;
         width: 3rem;
